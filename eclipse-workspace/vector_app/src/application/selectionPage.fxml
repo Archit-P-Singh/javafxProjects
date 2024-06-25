@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.selectionPage">
+   <children>
+      <Button fx:id="exitbutton" layoutX="426.0" layoutY="349.0" mnemonicParsing="false" onAction="#exiting" prefHeight="26.0" prefWidth="67.0" stylesheets="@application.css" text="EXIT" />
+      <Button fx:id="enterbutton" layoutX="426.0" layoutY="287.0" mnemonicParsing="false" onAction="#entering" prefHeight="26.0" prefWidth="67.0" stylesheets="@application.css" text="ENTER" />
+      <Button fx:id="cancelbutton" layoutX="426.0" layoutY="318.0" mnemonicParsing="false" onAction="#cancelling" stylesheets="@application.css" text="CANCEL" />
+      <Label fx:id="headlabel" alignment="CENTER" layoutY="10.0" prefHeight="88.0" prefWidth="600.0" text="VECTOR APPLICATION">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Label>
+      <Label fx:id="offerer" layoutX="145.0" layoutY="265.0" text="Select Your Choice">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="homeImage" fitHeight="155.0" fitWidth="182.0" layoutX="218.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.jpeg" />
+         </image></ImageView>
+      <ListView fx:id="choices" layoutX="145.0" layoutY="287.0" prefHeight="88.0" prefWidth="269.0" stylesheets="@application.css" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.welcomePage">
+   <children>
+      <Label fx:id="titlePane" layoutY="50.0" prefHeight="17.0" prefWidth="600.0" text="Welcome to the Ball Game" />
+      <Button fx:id="enter" layoutX="86.0" layoutY="290.0" mnemonicParsing="false" onAction="#enterBallGame" prefHeight="68.0" prefWidth="428.0" styleClass="buttton" stylesheets="@application.css" text="Enter">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Label fx:id="myLabel" layoutX="86.0" layoutY="129.0" text="Enter Your Name" />
+      <TextField fx:id="myTextField" layoutX="86.0" layoutY="166.0" prefHeight="40.0" prefWidth="428.0" />
+      <Button fx:id="logout" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutDone" prefHeight="26.0" prefWidth="54.0" text="Exit" />
+      <CheckBox fx:id="myCheckBox" layoutX="203.0" layoutY="253.0" mnemonicParsing="false" onAction="#change" text="Verify you're a human" textFill="#adb212">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="warningLabel" layoutX="86.0" layoutY="219.0" prefHeight="23.0" prefWidth="283.0" text="*Please verify the check box!" />
+   </children>
+</AnchorPane>

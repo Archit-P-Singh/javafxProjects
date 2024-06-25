@@ -1,0 +1,63 @@
+.root
+{
+	-fx-background-color:linear-gradient(#111111,#555555); 
+}
+
+/*#61D8DE, #E839F6*/
+
+.label
+{
+	-fx-font-size:42;
+	-fx-text-fill:white;
+	-fx-alignment:center;
+} 
+.button
+{
+	-fx-background-color: linear-gradient(#239c9c,#07f7f7);
+}
+#enter
+{
+	-fx-background-radius:30;
+}
+#back
+{
+	-fx-background-radius:30;
+}
+#warningLabel
+{
+	-fx-font-size:15;
+	-fx-text-fill:"red";
+	-fx-alignment:baseline-left;
+}
+.button:hover
+{
+	-fx-background-color: linear-gradient(#07f7f7,#239c9c);
+	-fx-text-fill:"yellow";
+	-fx-background-insets: 0,1;
+	-fx-effect: dropshadow(three-pass-box,#07f7f7,5,0,0,5);
+}
+.button:pressed
+{
+	-fx-background-color: #239c9c;
+	-fx-text-fill:"black";
+}
+#myLabel
+{
+	-fx-font-size:20;
+	-fx-alignment:center-left;
+}
+#myTextField
+{
+	-fx-background-color:#999999;
+	-fx-text-fill:linear-gradient(red 10%,blue);
+	-fx-effect: dropshadow(gaussian,yellow,5,0,6,5);
+	-fx-text-fill:"yellow";
+	-fx-font-size:25;
+}
+#nameLabel
+{
+	-fx-font-size:15;
+	-fx-alignment:top-left;
+	-fx-text-fill:#07f7f7;
+}
+	

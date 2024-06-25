@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane fx:id="dOB" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ball_control">
+   <effect>
+      <InnerShadow blurType="GAUSSIAN" />
+   </effect>
+   <children>
+      <Button layoutX="272.0" layoutY="3.0" mnemonicParsing="false" onAction="#up" prefHeight="49.0" prefWidth="57.0" text="UP">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Button layoutX="4.0" layoutY="164.0" mnemonicParsing="false" onAction="#left" prefHeight="49.0" prefWidth="57.0" text="LEFT">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Button layoutX="543.0" layoutY="164.0" mnemonicParsing="false" onAction="#right" prefHeight="49.0" prefWidth="57.0" text="RIGHT">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Button layoutX="272.0" layoutY="351.0" mnemonicParsing="false" onAction="#down" prefHeight="49.0" prefWidth="57.0" text="DOWN">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Circle fx:id="myCircle" layoutX="300.0" layoutY="200.0" radius="100.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8157894611358643" green="0.07553606480360031" blue="0.2112491875886917" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.8157894611358643" green="0.07553606480360031" blue="0.2112491875886917" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.12751677852348994">
+                     <color>
+                        <Color red="0.3009868562221527" green="0.5685306787490845" blue="0.8026315569877625" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.33557046979865773">
+                     <color>
+                        <Color red="0.7377985119819641" green="0.14729532599449158" blue="0.8157894611358643" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6812080536912751">
+                     <color>
+                        <Color green="0.9539473652839661" blue="0.9868420958518982" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.893251759698805">
+                     <color>
+                        <Color red="0.8026315569877625" green="0.789254367351532" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8026315569877625" green="0.789254367351532" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Circle>
+      <Button fx:id="back" layoutX="10.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitBallGame" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="nameLabel" layoutX="60.0" layoutY="19.0" text="Label" />
+   </children>
+</AnchorPane>
